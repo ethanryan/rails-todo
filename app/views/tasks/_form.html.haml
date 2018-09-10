@@ -12,5 +12,20 @@
   .field{:class => "#{current_page?(new_task_path) ? 'display-none' : ''}"}
     =f.label :completed
     =f.check_box :completed
+
+
+  -# = w.select "question_status", [["1", "label 1"], ["2", "label_2"]]
+  -# .field
+  -# =f.select "list_id", [["1", "label 1"], ["2", "label_2"]]
+    -# =f.label :list_id
+    -# =f.check_box :completed
+
+  .field
+    =f.label :list_id, 'List'
+    -# =f.select :list_id, [['Active', true], ['Inactive', false]]
+    -# =f.select :list_id, [['ANIMALS', true], ['PLANTS', false]]
+    =f.select :list_id, [[1, true], [5, false]]
+
+
   .actions
     =f.submit 'Save'
