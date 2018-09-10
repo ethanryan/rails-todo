@@ -15,7 +15,9 @@ User stories to implement
  - A user can filter their view by complete or incomplete tasks. #DONE
  > in tasks_controller, index method renders different tasks depending on if params[:completed] equals 'true', 'false' or neither, which returns all tasks
 
- - A user's default view is filtered to show only incomplete tasks.
+ - A user's default view is filtered to show only incomplete tasks. #DONE
+ > added custom routes to tasks_controller actions, done and incomplete, and make root route to tasks#incomplete
+
  - A user should be able to keep multiple lists.
  - A user should have access to only their tasks. (may require devise or a creative, lightweight auth system)
  - A user viewing a task should see a history of all its changes. (task audit trail)
