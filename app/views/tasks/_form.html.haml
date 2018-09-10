@@ -21,10 +21,13 @@
     -# =f.check_box :completed
 
   .field
-    =f.label :list_id, 'List'
-    -# =f.select :list_id, [['Active', true], ['Inactive', false]]
-    -# =f.select :list_id, [['ANIMALS', true], ['PLANTS', false]]
-    =f.select :list_id, [[1, true], [5, false]]
+    =f.label :list_id, 'List ID'
+    =f.text_field :list_id
+
+-# had trouble getting dropdown working, so using text_field above for list_id for now...
+  -# .field
+  -#   =f.label :list_id, 'List'
+  -#   =f.select :list_id, [[1, true], [5, false]]
 
 
   .actions
