@@ -1,5 +1,12 @@
 %h1 Tasks
 
+-# %span=link_to 'Home', root_path
+%span=link_to 'All', tasks_path
+%span=link_to 'Done', tasks_path(completed: true)
+%span=link_to 'Incomplete', tasks_path(completed: false)
+%br
+%br
+
 %table
   %thead
     %tr
