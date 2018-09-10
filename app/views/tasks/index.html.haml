@@ -12,7 +12,8 @@
     %tr
       %th Name
       %th Completed
-      %th List
+      %th List ID
+      %th List Name
       %th
       %th
       %th
@@ -22,7 +23,8 @@
       %tr
         %td=task.name
         %td=task.completed
-        %td=task.list_id
+        %td=task.list ? task.list.id : 'list.id'
+        %td=task.list ? task.list.name : 'list.name'
         %td=link_to 'Show', task
         %td=link_to 'Edit', edit_task_path(task)
         %td=link_to 'Destroy', task, :method => :delete, :data => { :confirm => 'Are you sure?' }
@@ -30,3 +32,7 @@
 %br
 
 =link_to 'Add a task', new_task_path
+
+%br
+
+=link_to 'Add a list', new_list_path
