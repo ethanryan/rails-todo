@@ -18,9 +18,9 @@ User stories to implement
  - A user's default view is filtered to show only incomplete tasks. #DONE
  > added custom routes to tasks_controller actions, done and incomplete, and make root route to tasks#incomplete
 
- - A user should be able to keep multiple lists.
+ - A user should be able to keep multiple lists. #DONE
  > created List model, added associations to models, added list_id column to Task table, and ran migrations to updated tables in database, then added list_id as a permitted params and updated tasks/views/form page so users can input a task's list_id, which gets saved to database
- 
+
  - A user should have access to only their tasks. (may require devise or a creative, lightweight auth system)
  - A user viewing a task should see a history of all its changes. (task audit trail)
  - A user should be able to see a history of all completed tasks and associated actions. (app audit trail)
