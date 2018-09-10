@@ -3,18 +3,27 @@ class TasksController < ApplicationController
 
   # GET /tasks
   # GET /tasks.json
-  
-  # def index
-  #   @tasks = Task.all
-  # end
   def index
-    if params[:completed] === "true"
-      @tasks = Task.where(:completed => true)
-    elsif params[:completed] === "false"
-      @tasks = Task.where(:completed => false)
-    else
-      @tasks = Task.all
-    end
+    @tasks = Task.all
+  end
+  # def index
+  #   if params[:completed] === "true"
+  #     @tasks = Task.where(:completed => true)
+  #   elsif params[:completed] === "false"
+  #     @tasks = Task.where(:completed => false)
+  #   else
+  #     @tasks = Task.all
+  #   end
+  # end
+
+  def done
+    @tasks = Task.where(:completed => true)
+    render 'index'
+  end
+
+  def incomplete
+    @tasks = Task.where(:completed => false)
+    render 'index'
   end
 
   # GET /tasks/1
