@@ -12,7 +12,9 @@ User stories to implement
  - A user should not be able to complete a task when creating it. #DONE
  > in tasks form, applying display-none class to 'completed' field if current_page?(new_task_path) returns true
 
- - A user can filter their view by complete or incomplete tasks.
+ - A user can filter their view by complete or incomplete tasks. #DONE
+ > in tasks_controller, index method renders different tasks depending on if params[:completed] equals 'true', 'false' or neither, which returns all tasks
+
  - A user's default view is filtered to show only incomplete tasks.
  - A user should be able to keep multiple lists.
  - A user should have access to only their tasks. (may require devise or a creative, lightweight auth system)
