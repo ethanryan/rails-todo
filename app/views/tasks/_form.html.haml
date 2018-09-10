@@ -9,7 +9,7 @@
   .field
     =f.label :name
     =f.text_field :name
-  .field
+  .field{:class => "#{current_page?(new_task_path) ? 'display-none' : ''}"}
     =f.label :completed
     =f.check_box :completed
   .actions
