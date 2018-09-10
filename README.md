@@ -20,7 +20,7 @@ User stories to implement
  > in tasks_controller, index method renders different tasks depending on if params[:completed] equals 'true', 'false' or neither, which returns all tasks
 
  - A user's default view is filtered to show only incomplete tasks. #DONE
- > added custom routes to tasks_controller actions, done and incomplete, and make root route to tasks#incomplete
+ > added custom routes to tasks_controller actions, done and incomplete, and made root route to tasks#incomplete
 
  - A user should be able to keep multiple lists. #DONE
  > created List model, added associations to models, added list_id column to Task table, and ran migrations to updated tables in database, then added list_id as a permitted params and updated tasks/views/form page so users can input a task's list_id, which gets saved to database
