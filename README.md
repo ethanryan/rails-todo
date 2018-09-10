@@ -7,6 +7,10 @@ You may be asked to explain your work and pair with a Contently engineer to furt
 
 To submit your homework, please update this README with information about which stories you completed, and submit the app as a zip file.
 
+demo gif: https://giphy.com/gifs/mXSoKnTKdZ4PzYn7Eh
+
+![rails todo demo](https://media.giphy.com/media/mXSoKnTKdZ4PzYn7Eh/giphy.gif)
+
 User stories to implement
 ----------------
  - A user should not be able to complete a task when creating it. #DONE
