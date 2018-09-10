@@ -10,8 +10,8 @@ To submit your homework, please update this README with information about which 
 User stories to implement
 ----------------
  - A user should not be able to complete a task when creating it. #DONE
- > in tasks form, applying display-none class to completed field if current_page? returns true for new_task_path - ER
- 
+ > in tasks form, applying display-none class to 'completed' field if current_page?(new_task_path) returns true
+
  - A user can filter their view by complete or incomplete tasks.
  - A user's default view is filtered to show only incomplete tasks.
  - A user should be able to keep multiple lists.
